@@ -1,4 +1,5 @@
 import React from 'react';
+import Chart from 'chart.js/auto';
 import BarChart from './components/BarChart';
 import LineChart from './components/LineChart';
 import DoughnutChart from './components/DoughnutChart';

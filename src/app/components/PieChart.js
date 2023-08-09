@@ -1,4 +1,4 @@
-'use client'
+'use client'    // This is important !!!
 
 import React from 'react';
 import Chart from 'chart.js/auto';
