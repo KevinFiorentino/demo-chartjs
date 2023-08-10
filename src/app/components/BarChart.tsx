@@ -1,7 +1,8 @@
 'use client'    // This is important !!!
 
 import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import 'chart.js/auto';
+import { Chart } from 'react-chartjs-2';
 
 const BarChart = () => {
   const data = {
@@ -16,7 +17,7 @@ const BarChart = () => {
       },
     ],
   };
-  return <Bar data={data} />;
+  return <Chart type='bar' data={data} />;
 };
 
 export default BarChart;

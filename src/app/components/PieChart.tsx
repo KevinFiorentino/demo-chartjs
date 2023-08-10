@@ -1,9 +1,10 @@
 'use client'    // This is important !!!
 
 import React from 'react';
-import { Doughnut } from "react-chartjs-2";
+import 'chart.js/auto';
+import { Chart } from 'react-chartjs-2';
 
-const DoughnutChart = () => {
+const PieChart = () => {
   const data = {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     datasets: [
@@ -23,7 +24,7 @@ const DoughnutChart = () => {
       },
     ],
   };
-  return <Doughnut data={data} />;
+  return <Chart type='pie' data={data} />;
 };
 
-export default DoughnutChart;
+export default PieChart;

@@ -1,7 +1,8 @@
 'use client'    // This is important !!!
 
 import React from 'react';
-import { Line } from "react-chartjs-2";
+import 'chart.js/auto';
+import { Chart } from 'react-chartjs-2';
 
 const LineChart = () => {
   const data = {
@@ -25,7 +26,7 @@ const LineChart = () => {
       },
     ],
   };
-  return <Line data={data} />;
+  return <Chart type='line' data={data} />;
 };
 
 export default LineChart;
